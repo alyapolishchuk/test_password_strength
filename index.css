@@ -2,7 +2,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: auto;
   overflow: auto;
-  background-color: rgba(132, 232, 255, 0.57);
+  background-color: rgba(132, 232, 255, 0.584);
   background-size: 400% 400%;
   background-attachment: fixed;
   color: grey;
@@ -132,14 +132,14 @@ li {
 }
 
 .wave {
-  background: rgb(255 255 255 / 25%);
+  background: rgba(255, 255, 255, 0.715);
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
   height: 12em;
   animation: wave 10s -3s linear infinite;
   transform: translate3d(0, 0, 0);
-  opacity: 0.8;
+  opacity: 0.6;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -148,7 +148,7 @@ li {
 .wave:nth-of-type(2) {
   bottom: -1.25em;
   animation: wave 18s linear reverse infinite;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .wave:nth-of-type(3) {
