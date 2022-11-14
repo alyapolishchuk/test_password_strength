@@ -23,36 +23,34 @@
         <input
           id="userPassword"
           type="password"
+          name="password"
+          title="enter password. 8 to 16 characters"
           placeholder="Enter your password"
           minlength="8"
           maxlength="16"
           pattern="(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[!@#%&*?$])[!@#%&*?$a-zA-Z0-9]{8,16}"
-          required
+          required="required"
         />
       </div>
-      <p>Password contains from 8 to 16 of the three character types</p>
+      <p>
+        The password should contain from 8 to 16 of the three character types
+      </p>
       <div class="listsContainer">
         <ul class="list">
           <li>
-            <ul>
-              <span class="check cross">✗</span>
-              <span class="check mark">✔</span>
-              letters
-            </ul>
+            <span class="cross">✗</span>
+            <span class="mark noMark">✔</span>
+            letters
           </li>
           <li>
-            <ul>
-              <span class="check cross">✗</span>
-              <span class="check mark">✔</span>
-              numbers
-            </ul>
+            <span class="cross">✗</span>
+            <span class="mark noMark">✔</span>
+            numbers
           </li>
           <li>
-            <ul>
-              <span class="check cross">✗</span>
-              <span class="check mark">✔</span>
-              symbols
-            </ul>
+            <span class="cross">✗</span>
+            <span class="mark noMark">✔</span>
+            symbols
           </li>
         </ul>
         <ul class="list">
@@ -63,5 +61,6 @@
       </div>
     </div>
     <script src="./js/showPassword.js" type="module"></script>
+    <script src="./js/password.js" type="module"></script>
   </body>
 </html>
