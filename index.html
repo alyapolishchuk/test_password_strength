@@ -28,39 +28,50 @@
           placeholder="Enter your password"
           minlength="8"
           maxlength="16"
-          pattern="(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[!@#%&*?$])[!@#%&*?$a-zA-Z0-9]{8,16}"
+          pattern="(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[§±!@#$%^&*:;\|/?.,`~])[§±!@#$%^&*:;\|/?.,`~a-zA-Z0-9]{8,16}"
           required="required"
         />
       </div>
+      <button id="button" type="button" >Confirm</button>
       <p>
         The password should contain from 8 to 16 of the three character types
       </p>
       <div class="listsContainer">
         <ul class="list">
-          <li>
-            <span class="cross">✗</span>
-            <span class="mark noMark">✔</span>
+          <li id="capital">
+            <span id="capitalCross" class="cross">&#10060;</span>
+            <span id="capitalMark" class="mark noMark"> &#9989; </span>
+            capital letters
+          </li>
+          <li id="letter">
+            <span id="lettersCross" class="cross">&#10060;</span>
+            <span id="lettersMark" class="mark noMark">&#9989;</span>
             letters
           </li>
-          <li>
-            <span class="cross">✗</span>
-            <span class="mark noMark">✔</span>
+          <li id="number">
+            <span id="numbersCross" class="cross">&#10060;</span>
+            <span id="numbersMark" class="mark noMark">&#9989;</span>
             numbers
           </li>
-          <li>
-            <span class="cross">✗</span>
-            <span class="mark noMark">✔</span>
+          <li id="symbol">
+            <span id="symbolsCross" class="cross">&#10060;</span>
+            <span id="symbolsMark" class="mark noMark">&#9989;</span>
             symbols
+          </li>
+          <li id="length">
+            <span id="lengthCross" class="cross">&#10060;</span>
+            <span id="lengthMark" class="mark noMark">&#9989;</span>
+            minimum 8 characters
           </li>
         </ul>
         <ul class="list typePasswordList">
-          <li>Easy</li>
-          <li>Average</li>
-          <li>Strong</li>
+          <li id="easy">Easy</li>
+          <li id="average">Average</li>
+          <li id="strong">Strong</li>
         </ul>
       </div>
     </div>
     <script src="./js/showPassword.js" type="module"></script>
-    <script src="./js/password.js" type="module"></script>
+    <script src="./js/passwordPatternValidation.js" type="module"></script>
   </body>
 </html>

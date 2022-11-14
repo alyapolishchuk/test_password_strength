@@ -29,6 +29,7 @@ input {
 input:invalid:not(:placeholder-shown) {
   border-color: red;
 }
+
 input:valid:not(:placeholder-shown) {
   border-color: green;
 }
@@ -74,8 +75,8 @@ ul {
   padding: 0 20px;
 }
 
-.typePasswordList{
-    text-align: center;
+.typePasswordList {
+  text-align: center;
 }
 
 li {
@@ -105,17 +106,34 @@ li {
   flex-wrap: wrap;
 }
 
-.green{
-    color: green;
+.green {
+  color: green;
 }
 
-.yellow{
-    color: yellow;
+.yellow {
+  color: yellow;
 }
 
-.red{
-    color: red;
+.red {
+  color: red;
 }
+
+button {
+  width: 100px;
+  padding: 8px 10px;
+  margin: 30px 0 0 0;
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid silver;
+  border-radius: 10px;
+  background-color: rgba(49, 142, 234, 0.247);
+}
+
+/* button {
+  cursor: pointer;
+  border: 2px solid rgb(42, 138, 179);
+  background-color: rgba(95, 132, 169, 0.549);
+} */
 
 /*animation*/
 
