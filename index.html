@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Password task</title>
+  </head>
+  <body>
+    <div>
+      <label for="userPassword">Password:</label>
+      <input
+        id="userPassword"
+        type="password"
+        placeholder="Enter your password"
+        minlength="8"
+        maxlength="16"
+        size="16"
+        pattern="(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[@#%$])[@#%$a-zA-Z0-9]{8,16}"
+        required
+      />
+      <p>Password must contain the following:</p>
+      <ul>
+        <li>
+          <span>✗</span>
+          <span>✔</span>
+          minimum 8 characters
+        </li>
+        <li>
+          <span>✗</span>
+          <span>✔</span>
+          letters
+        </li>
+        <li>
+          <span>✗</span>
+          <span>✔</span>
+          numbers
+        </li>
+        <li>
+          <span>✗</span>
+          <span>✔</span>
+          symbols
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
