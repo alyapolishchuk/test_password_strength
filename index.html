@@ -13,32 +13,39 @@
   </head>
   <body>
     <div>
-      <input
-        id="userPassword"
-        type="password"
-        placeholder="Enter your password"
-        minlength="8"
-        maxlength="16"
-        pattern="(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[!@#%&*?$])[!@#%&*?$a-zA-Z0-9]{8,16}"
-        required
-      />
-      <span id="icon"> &#128064; </span>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    <div class="container">
+      <div class="inputBox">
+        <span class="icon" id="icon"> &#128064; </span>
+        <input
+          id="userPassword"
+          type="password"
+          placeholder="Enter your password"
+          minlength="8"
+          maxlength="16"
+          pattern="(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[!@#%&*?$])[!@#%&*?$a-zA-Z0-9]{8,16}"
+          required
+        />
+      </div>
 
       <p>Password contains from 8 to 16 of the three character types</p>
       <ul>
         <li>
-          <span>✗</span>
-          <span>✔</span>
-          lowercase / uppercase letters
+          <span class="check cross">✗</span>
+          <span class="check mark">✔</span>
+          letters
         </li>
         <li>
-          <span>✗</span>
-          <span>✔</span>
+          <span class="check cross">✗</span>
+          <span class="check mark">✔</span>
           numbers
         </li>
         <li>
-          <span>✗</span>
-          <span>✔</span>
+          <span class="check cross">✗</span>
+          <span class="check mark">✔</span>
           symbols
         </li>
       </ul>

@@ -1,7 +1,143 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  margin: auto;
+  overflow: auto;
+  background-color: rgba(171, 221, 233, 0.781);
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
 
-ul {
-  list-style: none;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  padding: 5px 10px 5px 50px;
+  font-size: 16px;
+  outline: transparent;
+  border: 2px solid silver;
+  border-radius: 10px;
+}
+
+input:focus {
+  border: 2px solid rgb(36, 187, 189);
+  border-radius: 10px;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  cursor: pointer;
+}
+
+p {
+  width: 300px;
+  margin: 40px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin: 10px 0;
+}
+
+.check{
+padding: 0 10px;
+}
+
+/* .mark{
+    display: none;
+} */
+
+/*animation*/
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
+
+a {
+  display: block;
+  width: 100px;
+  padding: 10px;
+  background-color: #fff;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  margin: 10px auto;
+  font-weight: 700;
 }
