@@ -1,4 +1,4 @@
-let password = document.getElementById("userPassword");
+const password = document.getElementById("userPassword");
 const capital = document.getElementById("capital");
 const capitalCross = document.getElementById("capitalCross");
 const capitalMark = document.getElementById("capitalMark");
@@ -97,33 +97,22 @@ password.onkeyup = function () {
     lengthMark.classList.add("noMark");
     length.classList.remove("green");
   }
+
   // Validate strength - easy
   if (password.value.length >= 8 && password.value.match(symbols)) {
     easy.classList.add("red");
-    average.classList.add("grey");
-    strong.classList.add("grey");
   } else if (password.value.length >= 8 && password.value.match(numbers)) {
     easy.classList.add("red");
-    average.classList.add("grey");
-    strong.classList.add("grey");
   } else if (
     password.value.length >= 8 &&
     password.value.match(lowerCaseLetters)
   ) {
     easy.classList.add("red");
-    average.classList.add("grey");
-    strong.classList.add("grey");
   } else if (
     password.value.length >= 8 &&
     password.value.match(upperCaseLetters)
   ) {
     easy.classList.add("red");
-    average.classList.add("grey");
-    strong.classList.add("grey");
-  } else {
-    easy.classList.add("grey");
-    average.classList.add("grey");
-    strong.classList.add("grey");
   }
 
   // Validate strength - average
@@ -134,7 +123,6 @@ password.onkeyup = function () {
   ) {
     easy.classList.add("yellow");
     average.classList.add("yellow");
-    strong.classList.add("grey");
   } else if (
     password.value.length >= 8 &&
     password.value.match(numbers) &&
@@ -142,7 +130,6 @@ password.onkeyup = function () {
   ) {
     easy.classList.add("yellow");
     average.classList.add("yellow");
-    strong.classList.add("grey");
   } else if (
     password.value.length >= 8 &&
     password.value.match(numbers) &&
@@ -150,7 +137,6 @@ password.onkeyup = function () {
   ) {
     easy.classList.add("yellow");
     average.classList.add("yellow");
-    strong.classList.add("grey");
   } else if (
     password.value.length >= 8 &&
     password.value.match(upperCaseLetters) &&
@@ -158,7 +144,6 @@ password.onkeyup = function () {
   ) {
     easy.classList.add("yellow");
     average.classList.add("yellow");
-    strong.classList.add("grey");
   } else if (
     password.value.length >= 8 &&
     password.value.match(symbols) &&
@@ -166,7 +151,6 @@ password.onkeyup = function () {
   ) {
     easy.classList.add("yellow");
     average.classList.add("yellow");
-    strong.classList.add("grey");
   } else if (
     password.value.length >= 8 &&
     password.value.match(upperCaseLetters) &&
@@ -174,7 +158,9 @@ password.onkeyup = function () {
   ) {
     easy.classList.add("yellow");
     average.classList.add("yellow");
-    strong.classList.add("grey");
+  } else {
+    easy.classList.remove("yellow");
+    average.classList.remove("yellow");
   }
 
   // Validate strength - strong
@@ -189,25 +175,23 @@ password.onkeyup = function () {
     average.classList.add("green");
     strong.classList.add("green");
   } else {
-    easy.classList.add("grey");
-    average.classList.add("grey");
-    strong.classList.add("grey");
+    easy.classList.remove("green");
+    average.classList.remove("green");
+    strong.classList.remove("green");
   }
 
   // If there is no one of the characters
-  // if (
-  //   password.value.length >= 8 &&
-  //   !password.value.match(symbols) ||
-  //   !password.value.match(numbers) ||
-  //   !password.value.match(lowerCaseLetters) ||
-  //   !password.value.match(upperCaseLetters)
-  // ) {
-  //   easy.classList.add("yellow");
-  //   average.classList.add("yellow");
-  //   strong.classList.add("grey");
-  // }
 
-
-
-    console.log(password.value);
+  if (
+    password.value.length === 0 &&
+    !password.value.match(symbols) &&
+    !password.value.match(numbers) &&
+    !password.value.match(lowerCaseLetters) &&
+    !password.value.match(upperCaseLetters)
+  ) {
+    easy.classList.remove("red");
+    average.classList.remove("red");
+    strong.classList.remove("red");
+  }
+  console.log(password.value.length);
 };
