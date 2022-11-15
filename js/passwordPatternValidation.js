@@ -193,5 +193,4 @@ password.onkeyup = function () {
     average.classList.remove("red");
     strong.classList.remove("red");
   }
-  console.log(password.value.length);
 };
