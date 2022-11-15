@@ -20,6 +20,7 @@ input {
   width: 200px;
   height: 30px;
   padding: 5px 10px 5px 50px;
+  margin-bottom: 20px;
   font-size: 16px;
   outline: transparent;
   border: 2px solid silver;
@@ -52,7 +53,7 @@ input:not(:placeholder-shown) {
 
 p {
   min-width: 200px;
-  margin: 40px 0 20px 0;
+  margin: 20px 0 20px 0;
   text-align: center;
   font-size: 20px;
   color: rgb(49, 49, 49);
@@ -64,17 +65,25 @@ ul {
   margin: 0;
 }
 
-.list {
-  padding: 0 30px;
-}
-
 .typePasswordList {
   text-align: center;
 }
 
 li {
-  margin: 10px 0;
   font-size: 18px;
+}
+
+/* li:not(:first-child) {
+  margin-top: 10px;
+} */
+
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.symbolsList {
+  display: block;
+  text-align: center;
 }
 
 .mark {
@@ -91,11 +100,6 @@ li {
 
 .noMark {
   display: none;
-}
-
-.listsContainer {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .grey {

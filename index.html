@@ -31,45 +31,43 @@
           pattern="(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[§±!@#$%^&*:;\|/?.,`~])[§±!@#$%^&*:;\|/?.,`~a-zA-Z0-9]{8,16}"
           required="required"
         />
-        <strong id="password-difficulty"></strong>
-      </form>
-      <p>
-        The password should contain from 8 to 16 of the three character types
-      </p>
-      <div class="listsContainer">
-        <ul class="list">
-          <li id="capital">
-            <span id="capitalCross" class="cross">&#10060;</span>
-            <span id="capitalMark" class="mark noMark"> &#9989; </span>
-            capital letters
-          </li>
-          <li id="letter">
-            <span id="lettersCross" class="cross">&#10060;</span>
-            <span id="lettersMark" class="mark noMark">&#9989;</span>
-            letters
-          </li>
-          <li id="number">
-            <span id="numbersCross" class="cross">&#10060;</span>
-            <span id="numbersMark" class="mark noMark">&#9989;</span>
-            numbers
-          </li>
-          <li id="symbol">
-            <span id="symbolsCross" class="cross">&#10060;</span>
-            <span id="symbolsMark" class="mark noMark">&#9989;</span>
-            symbols §±!@#$%^&*:;\|/?.,`~
-          </li>
-          <li id="length">
-            <span id="lengthCross" class="cross">&#10060;</span>
-            <span id="lengthMark" class="mark noMark">&#9989;</span>
-            minimum 8 characters
-          </li>
-        </ul>
         <ul class="list typePasswordList">
           <li class="" id="easy">Easy</li>
           <li class="" id="average">Average</li>
           <li class="" id="strong">Strong</li>
         </ul>
-      </div>
+      </form>
+      <p>
+        The password should contain from 8 to 16 of the three character types
+      </p>
+      <ul class="list">
+        <li id="capital">
+          <span id="capitalCross" class="cross">&#10060;</span>
+          <span id="capitalMark" class="mark noMark"> &#9989; </span>
+          capital letters
+        </li>
+        <li id="letter">
+          <span id="lettersCross" class="cross">&#10060;</span>
+          <span id="lettersMark" class="mark noMark">&#9989;</span>
+          letters
+        </li>
+        <li id="number">
+          <span id="numbersCross" class="cross">&#10060;</span>
+          <span id="numbersMark" class="mark noMark">&#9989;</span>
+          numbers
+        </li>
+        <li id="symbol">
+          <span id="symbolsCross" class="cross">&#10060;</span>
+          <span id="symbolsMark" class="mark noMark">&#9989;</span>
+          symbols
+          <span class="symbolsList">§±!@#$%^&*:;\|/?.,`~</span>
+        </li>
+        <li id="length">
+          <span id="lengthCross" class="cross">&#10060;</span>
+          <span id="lengthMark" class="mark noMark">&#9989;</span>
+          minimum 8 characters
+        </li>
+      </ul>
     </div>
     <script src="./js/showPassword.js" type="module"></script>
     <script src="./js/passwordPatternValidation.js" type="module"></script>
