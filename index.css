@@ -73,18 +73,10 @@ li {
   font-size: 18px;
 }
 
-/* li:not(:first-child) {
-  margin-top: 10px;
-} */
-
 li:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.symbolsList {
-  display: block;
-  text-align: center;
-}
 
 .mark {
   padding: 0 10px;
