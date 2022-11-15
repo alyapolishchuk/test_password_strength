@@ -194,5 +194,20 @@ password.onkeyup = function () {
     strong.classList.add("grey");
   }
 
-  console.log(password.value);
+  // If there is no one of the characters
+  // if (
+  //   password.value.length >= 8 &&
+  //   !password.value.match(symbols) ||
+  //   !password.value.match(numbers) ||
+  //   !password.value.match(lowerCaseLetters) ||
+  //   !password.value.match(upperCaseLetters)
+  // ) {
+  //   easy.classList.add("yellow");
+  //   average.classList.add("yellow");
+  //   strong.classList.add("grey");
+  // }
+
+
+
+    console.log(password.value);
 };
