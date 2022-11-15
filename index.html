@@ -18,7 +18,7 @@
       <div class="wave"></div>
     </div>
     <div class="container">
-      <div class="inputBox">
+      <form class="inputBox">
         <span class="icon" id="icon"> &#128064; </span>
         <input
           id="userPassword"
@@ -31,7 +31,8 @@
           pattern="(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[§±!@#$%^&*:;\|/?.,`~])[§±!@#$%^&*:;\|/?.,`~a-zA-Z0-9]{8,16}"
           required="required"
         />
-      </div>
+        <strong id="password-difficulty"></strong>
+      </form>
       <p>
         The password should contain from 8 to 16 of the three character types
       </p>
@@ -64,14 +65,13 @@
           </li>
         </ul>
         <ul class="list typePasswordList">
-          <li id="easy">Easy</li>
-          <li id="average">Average</li>
-          <li id="strong">Strong</li>
+          <li class="" id="easy">Easy</li>
+          <li class="" id="average">Average</li>
+          <li class="" id="strong">Strong</li>
         </ul>
       </div>
     </div>
     <script src="./js/showPassword.js" type="module"></script>
     <script src="./js/passwordPatternValidation.js" type="module"></script>
-    <script src="./js/passwordTypes.js" type="module"></script>
   </body>
 </html>

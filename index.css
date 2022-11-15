@@ -106,16 +106,19 @@ li {
   flex-wrap: wrap;
 }
 
-.green {
-  color: green;
+.grey {
+  color: grey;
+}
+.red {
+  color: red;
 }
 
 .yellow {
   color: yellow;
 }
 
-.red {
-  color: red;
+.green {
+  color: green;
 }
 
 /*animation*/
